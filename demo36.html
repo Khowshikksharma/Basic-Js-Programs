@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            // parametrized constructor
+
+            class Product{
+                constructor(id,category,name,cost) {
+                    this.pid=id
+                    this.pname=name
+                    this.pcost=cost
+                    this.pcategory=category
+                }
+                display(){
+                    document.writeln(`<b>Product ID </b>= ${this.pid}</br>`)
+                    document.writeln(`<b>Product Name</b> = ${this.pname}</br>`)
+                    document.writeln(`<b>Product Category </b>= ${this.pcategory}</br>`)
+                    document.writeln(`<b>Product Cost</b> = ${this.pcost}/-</br>`)
+                    document.writeln(`</br>`)
+                }
+            }
+            let p=new Product(1293,"toy","jungle tiger",999.0)
+            p.display()
+            let p2=new Product(124,"clothes","saree",4999.0)
+            p2.display()
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            //map object - forEach method
+            const mapobj=new Map()
+            mapobj.set(1,101)
+            mapobj.set("id",123)
+            mapobj.set("name","klu")
+            document.writeln("Map object 1 Size is : "+mapobj.size+"</br></br>")
+
+            document.writeln("<u>Mapobj 1 Only Values printed</u></br>")
+            mapobj.forEach((value)=> document.writeln(value))
+            document.writeln("</br></br>")
+
+            document.writeln("<u>Mapobj 1 Values : Keys printed</u></br>")  // order id value-key
+            mapobj.forEach((value,key)=>{
+                document.writeln(key+":"+value)
+            })
+            
+
+            const mapobj2=new Map([["id",31954],["name","khowshikk"]]) //constructor
+            document.writeln("</br></br>Map object 2 Size is : "+mapobj2.size+"</br></br>")
+            
+            document.writeln("<u>Mapobj 2 Only Values printed</u></br>")
+            mapobj2.forEach((value)=> document.writeln(value))
+            document.writeln("</br></br>")
+
+            document.writeln("<u>Mapobj 2 Values : Keys printed</u></br>")  // order is value-key, in only function call
+            const diaplay1=mapobj2.forEach((v,k)=>{
+                document.writeln(k+":"+v)
+            })
+            diaplay1
+            document.writeln("</br><u>Mapobj 2 Values : Keys printed</u></br>")  // order is value-key, in forEach call
+            const diaplay2=(v,k)=>{
+                document.writeln(k+":"+v)
+            }
+            mapobj2.forEach(diaplay2)
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

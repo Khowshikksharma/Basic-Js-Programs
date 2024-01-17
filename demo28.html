@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JAVASCRIPT-28</title>
+        <script>
+            //  map object - key value pair
+
+            document.writeln("<h2 align='center'><u>Demo on Map  </u></h2> </br>")
+
+            const demomap = new Map()
+
+            demomap.set("id",123)
+            demomap.set("name","klu")
+            demomap.set("age",40.5)
+            demomap.set("status",false)
+            demomap.set("name","klef")  // duplicate key - klu will be updated as klef
+
+            document.writeln("Map size is : "+ demomap.size)
+            document.writeln("</br>Map type : "+ typeof demomap+"</br></br>")
+
+
+            document.writeln(demomap.get("id")+"</br>")
+            document.writeln(demomap.get("location")+"</br></br>")
+
+            document.writeln(demomap.has("id")+"</br>")          // has or not
+            document.writeln(demomap.has("location")+"</br></br>")
+
+            document.writeln("Deletion: "+demomap.delete("status")+"</br>")   // delete a key
+            document.writeln("Size = "+demomap.size+"</br></br>")
+
+            document.writeln("<u>Display Map Keys</u></br>")
+            for (const k of demomap.keys()){
+                document.writeln(k)
+            }
+            document.writeln("</br></br>")
+
+            document.writeln("<u>Display Map Values</u></br>")
+            for (const k of demomap.values()){
+                document.writeln(k)
+            }
+            document.writeln("</br></br>")
+
+            document.writeln("<u>Display Map Values based on Keys</u></br>")
+            for (const k of demomap.keys()){
+                document.writeln(demomap.get(k))
+            }
+            document.writeln("</br></br>")
+
+            document.writeln("<u>Display Map Values & Keys</u></br>")
+            for (const [k,v] of demomap.entries()){
+                document.writeln(k+":"+v+"</br>")
+            }
+            document.writeln("</br></br>")
+
+            demomap.clear()
+            document.writeln("After clear() Map size = "+demomap.size+"</br></br>")
+            
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

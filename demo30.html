@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            //map method - it change the given array elements on given operation temporarly
+            const arr1=[23,45,62,34,56,78,90]
+
+            document.writeln("Given array 1 : "+arr1+"</br>")
+            document.writeln("Array 1 size : "+arr1.length+"</br></br>")
+
+            const output1=arr1.map((number)=>number*10)
+            document.writeln("<u>Get whole array 1 multiple by 10:</u></br>")
+            document.writeln(arr1.map((number)=>number*10)+"</br>")
+            document.writeln("OUTPUT 1 : "+output1+"</br>")
+
+            //filter method - it filter given array based on given condition
+            const arr2=[10,20,21,32,56,91,100]
+            
+            document.writeln("</br></br>Given array 2 : "+arr2+"</br>")
+            document.writeln("Array 2 size : "+arr2.length+"</br></br>")
+
+            const output2=arr2.filter((element)=>element%2==0)
+            document.writeln("<u>Get whole array 2 filter based on even numbers</u></br>")
+            document.writeln(arr2.filter((element)=>element%2==0)+"</br>")
+            document.writeln("OUTPUT 2 : "+output2+"</br>")
+
+
+            //reduce method - it will give only single value has a output which accmulate the array to given operation
+            const arr3=[10,20,30,40,50]
+
+            document.writeln("</br></br>Given array 3 : "+arr3+"</br>")
+            document.writeln("Array 3 size : "+arr3.length+"</br></br>")
+
+            document.writeln("")
+            const display=(sum,element)=>sum=sum+element
+            document.writeln(arr3.reduce((sum,element)=>sum=sum+element,10)+"</br>")
+            const output3=arr3.reduce(display,0)
+            document.writeln("OUTPUT 3 : "+output3+"</br>")
+
+
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

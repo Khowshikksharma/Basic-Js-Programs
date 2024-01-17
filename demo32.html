@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            // object
+            const person={"id":101,"name":"klu","age":19.1,"location":"guntur"}
+            document.writeln("type="+typeof person+"</br>")
+            document.writeln(person.id+"</br>")
+            document.writeln(person.location+"</br>")
+            document.writeln(typeof person.age+"</br>")
+            document.writeln(Object.keys(person)+"</br>")
+            document.writeln(Object.values(person)+"</br>")
+            document.writeln(Object.entries(person)+"</br></br>")
+
+            //refer demo6.html
+
+            document.writeln("<u>Person Object Keys</u></br>")
+            for(let key of Object.keys(person)){
+                document.writeln(key+"</br>")
+            }
+
+            
+            document.writeln("</br><u>Person Object Values</u></br>")
+            for(let v of Object.values(person)){
+                document.writeln(v+"</br>")
+            }
+
+            
+            document.writeln("</br><u>Person Object Keys & Values</u></br>")
+            for(let [k,v] of Object.entries(person)){
+                document.writeln(k+":"+v+"</br>")
+            }
+
+            
+            document.writeln("</br><u>Person Objects</u></br>")
+            for(const v of Object.keys(person)){
+                document.writeln(v+":"+person[v]+"</br>")
+            }
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

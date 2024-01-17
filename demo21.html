@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            //recursive function demo 1
+            function factorial(n){   //with if-else
+                if(n==0 || n==1){
+                    return 1
+                }
+                else{
+                    return factorial(n-1)*n
+                }
+            }
+
+            function fact(n){ //with terinary
+                return n==0?1:fact(n-1)*n
+            }
+            const n=parseInt(prompt("Enter numner",0))
+            document.writeln("Output: "+factorial(n)+"</br>")
+            console.log("Output: "+factorial(n))
+            window.alert("Output: "+factorial(n))
+
+            document.writeln("Output: "+fact(n))
+            console.log("Output: "+fact(n))
+            window.alert("Output: "+fact(n))
+
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
